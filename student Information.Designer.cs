@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblAccountLogin = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -40,10 +41,15 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(23)))), ((int)(((byte)(59)))));
             this.dataGridView1.Location = new System.Drawing.Point(12, 91);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1000, 283);
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView1.Size = new System.Drawing.Size(1260, 401);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
@@ -51,6 +57,7 @@
             // 
             this.lblAccountLogin.AutoSize = true;
             this.lblAccountLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountLogin.ForeColor = System.Drawing.Color.White;
             this.lblAccountLogin.Location = new System.Drawing.Point(7, 53);
             this.lblAccountLogin.Name = "lblAccountLogin";
             this.lblAccountLogin.Size = new System.Drawing.Size(239, 29);
@@ -76,7 +83,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(903, 474);
+            this.btnExit.Location = new System.Drawing.Point(1156, 601);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(116, 28);
             this.btnExit.TabIndex = 16;
@@ -86,17 +93,23 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(833, 379);
+            this.btnDelete.BackColor = System.Drawing.Color.LightGray;
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
+            this.btnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(1054, 498);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(179, 41);
+            this.btnDelete.Size = new System.Drawing.Size(218, 41);
             this.btnDelete.TabIndex = 47;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(6, 474);
+            this.btnBack.Location = new System.Drawing.Point(46, 601);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(116, 28);
             this.btnBack.TabIndex = 48;
@@ -107,7 +120,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 507);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1284, 640);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnExit);
